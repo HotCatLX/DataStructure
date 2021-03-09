@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5EDE4C25F68A510021B8CE /* LXDynamicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EDE4B25F68A510021B8CE /* LXDynamicArray.swift */; };
+		3D5EDE4E25F698810021B8CE /* LXDynamicArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EDE4D25F698810021B8CE /* LXDynamicArrayTest.swift */; };
 		3DD6DFA3237C634F009171D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6DFA2237C634F009171D5 /* main.swift */; };
 		3DDD40A8237C67EA007CCEBD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD40A7237C67EA007CCEBD /* Queue.swift */; };
-		3DDD40AA237C68FC007CCEBD /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD40A9237C68FC007CCEBD /* LinkList.swift */; };
+		3DEBDE6C25F7CF56009C67DC /* LXLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBDE6B25F7CF56009C67DC /* LXLinkedList.swift */; };
+		3DEBDE6F25F7D81E009C67DC /* LXLXLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBDE6E25F7D81E009C67DC /* LXLXLinkedListTest.swift */; };
+		3DEBDE7625F7E432009C67DC /* LXCheckRangeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBDE7525F7E432009C67DC /* LXCheckRangeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D5EDE4B25F68A510021B8CE /* LXDynamicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXDynamicArray.swift; sourceTree = "<group>"; };
+		3D5EDE4D25F698810021B8CE /* LXDynamicArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXDynamicArrayTest.swift; sourceTree = "<group>"; };
 		3DD6DF9F237C634F009171D5 /* DataStructure_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD6DFA2237C634F009171D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3DDD40A7237C67EA007CCEBD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		3DDD40A9237C68FC007CCEBD /* LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
+		3DEBDE6B25F7CF56009C67DC /* LXLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXLinkedList.swift; sourceTree = "<group>"; };
+		3DEBDE6E25F7D81E009C67DC /* LXLXLinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXLXLinkedListTest.swift; sourceTree = "<group>"; };
+		3DEBDE7525F7E432009C67DC /* LXCheckRangeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXCheckRangeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +69,8 @@
 		3DD6DFA1237C634F009171D5 /* DataStructure_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				3DDD40A3237C67A1007CCEBD /* 1.数组 */,
+				3DEBDE7425F7E3FD009C67DC /* 0.公共 */,
+				3DDD40A3237C67A1007CCEBD /* 1.动态数组 */,
 				3DDD40A4237C67AA007CCEBD /* 2.链表 */,
 				3DDD40A5237C67B9007CCEBD /* 3.栈 */,
 				3DDD40A6237C67C2007CCEBD /* 4.队列 */,
@@ -70,17 +79,20 @@
 			path = DataStructure_Swift;
 			sourceTree = "<group>";
 		};
-		3DDD40A3237C67A1007CCEBD /* 1.数组 */ = {
+		3DDD40A3237C67A1007CCEBD /* 1.动态数组 */ = {
 			isa = PBXGroup;
 			children = (
+				3D5EDE4B25F68A510021B8CE /* LXDynamicArray.swift */,
+				3D5EDE4D25F698810021B8CE /* LXDynamicArrayTest.swift */,
 			);
-			path = "1.数组";
+			path = "1.动态数组";
 			sourceTree = "<group>";
 		};
 		3DDD40A4237C67AA007CCEBD /* 2.链表 */ = {
 			isa = PBXGroup;
 			children = (
-				3DDD40A9237C68FC007CCEBD /* LinkList.swift */,
+				3DEBDE6B25F7CF56009C67DC /* LXLinkedList.swift */,
+				3DEBDE6E25F7D81E009C67DC /* LXLXLinkedListTest.swift */,
 			);
 			path = "2.链表";
 			sourceTree = "<group>";
@@ -98,6 +110,14 @@
 				3DDD40A7237C67EA007CCEBD /* Queue.swift */,
 			);
 			path = "4.队列";
+			sourceTree = "<group>";
+		};
+		3DEBDE7425F7E3FD009C67DC /* 0.公共 */ = {
+			isa = PBXGroup;
+			children = (
+				3DEBDE7525F7E432009C67DC /* LXCheckRangeable.swift */,
+			);
+			path = "0.公共";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +146,7 @@
 		3DD6DF97237C634F009171D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LX;
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = suckerl;
@@ -158,9 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5EDE4E25F698810021B8CE /* LXDynamicArrayTest.swift in Sources */,
 				3DD6DFA3237C634F009171D5 /* main.swift in Sources */,
-				3DDD40AA237C68FC007CCEBD /* LinkList.swift in Sources */,
 				3DDD40A8237C67EA007CCEBD /* Queue.swift in Sources */,
+				3DEBDE6C25F7CF56009C67DC /* LXLinkedList.swift in Sources */,
+				3DEBDE7625F7E432009C67DC /* LXCheckRangeable.swift in Sources */,
+				3DEBDE6F25F7D81E009C67DC /* LXLXLinkedListTest.swift in Sources */,
+				3D5EDE4C25F68A510021B8CE /* LXDynamicArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
