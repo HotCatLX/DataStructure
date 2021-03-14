@@ -8,5 +8,15 @@
 
 import Foundation
 
-    print("Hello, World!")
+//链表测试
+let linkedListFirst = LXLXLinkedListTest()
+linkedListFirst.linkedListTest1()
+linkedListFirst.linkedListTest2()
+
+
+
+
+
+
+
 

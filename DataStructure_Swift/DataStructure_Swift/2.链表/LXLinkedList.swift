@@ -12,14 +12,27 @@ protocol addd {
     
 }
 
-class LXLinkedList<T>: NSObject, LXCheckRangeable {
+class LXLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
     
     //LXCheckRangeable
     var size: Int = 0
     
     //CustomStringConvertible
     override var description: String {
-        "LXLinkedList"
+        var returnStr = ""
+        returnStr.append("size = \(size), [")
+       
+        var node = first
+        for i in 0 ..< size {
+            if (i != 0) {
+                returnStr.append(",")
+            }
+//            returnStr.append("\(String(describing: node?.val))")
+            returnStr.append("\(node!.val)")
+            node = node?.next
+        }
+        returnStr.append("]")
+        return returnStr
     }
     
     //节点
@@ -125,7 +138,7 @@ class LXLinkedList<T>: NSObject, LXCheckRangeable {
         }
         
         for i in 0 ..< size {
-            if ((node?.val = element) != nil) {
+            if node?.val == element {
                 return i
             }
             node = node?.next
