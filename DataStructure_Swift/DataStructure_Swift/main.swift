@@ -10,8 +10,7 @@ import Foundation
 
 //链表测试
 let linkedListFirst = LXLXLinkedListTest()
-linkedListFirst.linkedListTest1()
-linkedListFirst.linkedListTest2()
+linkedListFirst.linkedListTest()
 
 
 

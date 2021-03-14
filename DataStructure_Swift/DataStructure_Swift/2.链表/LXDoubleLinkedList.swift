@@ -1,21 +1,22 @@
 //
-//  LXLinkedList.swift
+//  LXDoubleLinkedList.swift
 //  DataStructure_Swift
 //
-//  Created by suckerl on 2021/3/9.
+//  Created by suckerl on 2021/3/15.
 //  Copyright © 2021 suckerl. All rights reserved.
 //
 
 import Cocoa
-
 /*
- * 单链表
+ * 双向链表
  */
 
-class LXLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
+class LXDoubleLinkedList<T:Equatable>: NSObject,LXCheckRangeable {
     
-    //LXCheckRangeable
+    
+    private var first: ListNode<T>?
     var size: Int = 0
+    private var last: ListNode<T>?
     
     //CustomStringConvertible
     override var description: String {
@@ -27,7 +28,6 @@ class LXLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
             if (i != 0) {
                 returnStr.append(",")
             }
-//            returnStr.append("\(String(describing: node?.val))")
             returnStr.append("\(node!.val)")
             node = node?.next
         }
@@ -35,30 +35,40 @@ class LXLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
         return returnStr
     }
     
-    //节点
     private class ListNode<T> {
         var val: T
         var next: ListNode?
-        init(_ val: T, next: ListNode<T>?) {
+        var prev: ListNode?
+        init(_ val: T, prev: ListNode<T>?,next: ListNode<T>?) {
             self.val = val
             self.next = next
+            self.prev = prev
         }
     }
     
-    private var first: ListNode<T>?
     
     /*
-     * 获取对应的节点
+     * 获取对应的节点(二分查找)
      * @param index
      * @retuen node
      * warning: 强制! 这里需要优化
      */
     private func node(index: Int) -> ListNode<T> {
-        var node = first
-        for _ in 0..<index {
-            node = node?.next
+        rangeCheck(index: index)
+        
+        if index < ( size >> 1) {
+            var node = first
+            for _ in 0..<index {
+                node = node?.next
+            }
+            return node!
+        }else {
+            var node = last
+            for _ in ((size >> 1)..<size).reversed()  {
+                node = node?.prev
+            }
+            return node!
         }
-        return node!
     }
     
     /*
@@ -67,6 +77,7 @@ class LXLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
     public func clear() {
         size = 0
         first = nil
+        last = nil
     }
     
     /*
@@ -98,15 +109,29 @@ class LXLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
     public func add(index:Int, element:T) {
         rangeCheckForAdd(index: index)
         
-        if index == 0 {
-            let node = ListNode(element, next: first)
-            first = node
+        if index == size {//最后面添加
+            let oldlast = last
+            last = ListNode(element, prev: oldlast, next: nil)
+            
+            if oldlast == nil {//第一个元素
+                first = last
+            }else {
+                oldlast?.next = last
+            }
+            
         }else {
-            let prev =  node(index: index - 1)
-            let node = ListNode(element, next: prev.next)
-            prev.next = node
+            let next = node(index: index)
+            let prev = next.prev
+            let indexnode = ListNode(element, prev: prev, next: next)
+            
+            next.prev = indexnode;
+            if first == nil {//index = 0
+               first = indexnode
+            }else {
+                prev?.next = indexnode
+            }
         }
-       
+        
         size += 1
     }
     
@@ -143,6 +168,5 @@ class LXLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
         
         return 0
     }
-    
     
 }
