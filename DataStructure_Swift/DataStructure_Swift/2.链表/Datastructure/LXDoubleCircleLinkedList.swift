@@ -1,19 +1,19 @@
 //
-//  LXDoubleLinkedList.swift
+//  LXDoubleCircleLinkedList.swift
 //  DataStructure_Swift
 //
-//  Created by suckerl on 2021/3/15.
+//  Created by suckerl on 2021/3/17.
 //  Copyright © 2021 suckerl. All rights reserved.
 //
 
 import Cocoa
+
 /*
- * 双向链表
+ * 双向循环链表
  */
 
-class LXDoubleLinkedList<T:Equatable>: NSObject,LXCheckRangeable {
-    
-    
+class LXDoubleCircleLinkedList<T:Equatable>: NSObject, LXCheckRangeable {
+   
     private var first: ListNode<T>?
     var size: Int = 0
     private var last: ListNode<T>?
@@ -141,10 +141,23 @@ class LXDoubleLinkedList<T:Equatable>: NSObject,LXCheckRangeable {
      */
     public func remove(index: Int) -> T {
         rangeCheck(index: index)
-
+        
         let indexnode = node(index: index)
-        let prev = index == 0 ? first : node(index: index - 1)
-        prev?.next = indexnode.next
+        let prev = indexnode.prev
+        let next = indexnode.next
+
+        if prev == nil {//indexnode 为头结点
+            first = next
+        }else {
+            prev?.next = next
+        }
+
+        if next == nil {//indexnode为尾节点
+            last = prev
+        }else {
+            next?.prev = prev
+        }
+
         size -= 1
         return indexnode.val
     }
@@ -168,5 +181,4 @@ class LXDoubleLinkedList<T:Equatable>: NSObject,LXCheckRangeable {
         
         return 0
     }
-    
 }

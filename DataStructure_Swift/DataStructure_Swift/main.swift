@@ -8,11 +8,19 @@
 
 import Foundation
 
-//链表测试
-let linkedListFirst = LXLXLinkedListTest()
-linkedListFirst.linkedListTest()
+/*
+ * 链表测试
+ 
+ //单向链表测试
+ let linkedList = LXLXLinkedListTest()
+ linkedList.linkedListTest()
+ 
+ */
 
 
+//双向链表测试
+let doubleLinkedList = LXDoubleLinkedListTest()
+doubleLinkedList.doubleLinkedListTest()
 
 
 

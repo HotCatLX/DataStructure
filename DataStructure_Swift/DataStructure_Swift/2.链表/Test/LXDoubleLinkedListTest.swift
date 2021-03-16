@@ -1,22 +1,26 @@
 //
-//  LXLXLinkedListTest.swift
+//  LXDoubleLinkedListTest.swift
 //  DataStructure_Swift
 //
-//  Created by suckerl on 2021/3/10.
+//  Created by suckerl on 2021/3/17.
 //  Copyright © 2021 suckerl. All rights reserved.
 //
 
 import Cocoa
 
-class LXLXLinkedListTest: NSObject {
+/*
+ * 双向链表测试类
+ */
 
-    public func linkedListTest() {
-        self.linkedListTest1()
-        self.linkedListTest2()
+class LXDoubleLinkedListTest: NSObject {
+    
+    public func doubleLinkedListTest() {
+        self.doubleLinkedListTest1()
+        self.doubleLinkedListTest2()
     }
     
     
-    public func linkedListTest1() {
+    public func doubleLinkedListTest1() {
        let linkedlist = LXLinkedList<Int>()
         var val = 0
         for i in 0...20 {
@@ -26,7 +30,7 @@ class LXLXLinkedListTest: NSObject {
         print(linkedlist.description)
     }
     
-    public func linkedListTest2() {
+    public func doubleLinkedListTest2() {
        let linkedlist = LXLinkedList<Int>()
         linkedlist.add(index: 0, element: 1)
         linkedlist.add(index: 1, element: 2)
@@ -38,11 +42,11 @@ class LXLXLinkedListTest: NSObject {
         linkedlist.add(index: 0, element: 9)
         print(linkedlist.description)
 
-
         print("index 5 is : \(linkedlist.get(index: 5))")
         print("index 0 is : \(linkedlist.get(index: 0))")
         print("5 的 index is : \(linkedlist.indexOf(element: 5))")
         print("2 的 index is : \(linkedlist.indexOf(element: 2))")
+        print("9 的 index is : \(linkedlist.indexOf(element: 9))")
 
         linkedlist.set(index: 4, element: 9)
         linkedlist.set(index: 2, element: 8)
@@ -63,8 +67,4 @@ class LXLXLinkedListTest: NSObject {
         linkedlist.clear()
         print(linkedlist.description)
     }
-    
-    
-    
-    
 }

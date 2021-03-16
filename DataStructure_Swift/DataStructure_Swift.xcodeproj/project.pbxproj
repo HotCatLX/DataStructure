@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		3D5EDE4C25F68A510021B8CE /* LXDynamicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EDE4B25F68A510021B8CE /* LXDynamicArray.swift */; };
 		3D5EDE4E25F698810021B8CE /* LXDynamicArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EDE4D25F698810021B8CE /* LXDynamicArrayTest.swift */; };
-		3D6B8ED425FE06B300C06B94 /* 206ReverseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B8ED325FE06B300C06B94 /* 206ReverseList.swift */; };
 		3D6B8ED725FE1C7A00C06B94 /* LeetcodeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B8ED625FE1C7A00C06B94 /* LeetcodeLinkedList.swift */; };
 		3D6B8EDA25FE6E4400C06B94 /* LXDoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B8ED925FE6E4400C06B94 /* LXDoubleLinkedList.swift */; };
+		3DD5DA9126011722009AF827 /* LXDoubleLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5DA9026011722009AF827 /* LXDoubleLinkedListTest.swift */; };
+		3DD5DA94260119C5009AF827 /* LXSingleCircleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5DA93260119C5009AF827 /* LXSingleCircleLinkedList.swift */; };
+		3DD5DA97260119E4009AF827 /* LXSingleCircleLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5DA96260119E4009AF827 /* LXSingleCircleLinkedListTest.swift */; };
+		3DD5DA9B2601216A009AF827 /* LXDoubleCircleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5DA9A2601216A009AF827 /* LXDoubleCircleLinkedList.swift */; };
+		3DD5DAA3260122EC009AF827 /* LXStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5DAA2260122EC009AF827 /* LXStack.swift */; };
 		3DD6DFA3237C634F009171D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6DFA2237C634F009171D5 /* main.swift */; };
-		3DDD40A8237C67EA007CCEBD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD40A7237C67EA007CCEBD /* Queue.swift */; };
 		3DEBDE6C25F7CF56009C67DC /* LXLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBDE6B25F7CF56009C67DC /* LXLinkedList.swift */; };
 		3DEBDE6F25F7D81E009C67DC /* LXLXLinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBDE6E25F7D81E009C67DC /* LXLXLinkedListTest.swift */; };
 		3DEBDE7625F7E432009C67DC /* LXCheckRangeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBDE7525F7E432009C67DC /* LXCheckRangeable.swift */; };
@@ -34,12 +37,15 @@
 /* Begin PBXFileReference section */
 		3D5EDE4B25F68A510021B8CE /* LXDynamicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXDynamicArray.swift; sourceTree = "<group>"; };
 		3D5EDE4D25F698810021B8CE /* LXDynamicArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXDynamicArrayTest.swift; sourceTree = "<group>"; };
-		3D6B8ED325FE06B300C06B94 /* 206ReverseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 206ReverseList.swift; sourceTree = "<group>"; };
 		3D6B8ED625FE1C7A00C06B94 /* LeetcodeLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeLinkedList.swift; sourceTree = "<group>"; };
 		3D6B8ED925FE6E4400C06B94 /* LXDoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXDoubleLinkedList.swift; sourceTree = "<group>"; };
+		3DD5DA9026011722009AF827 /* LXDoubleLinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXDoubleLinkedListTest.swift; sourceTree = "<group>"; };
+		3DD5DA93260119C5009AF827 /* LXSingleCircleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXSingleCircleLinkedList.swift; sourceTree = "<group>"; };
+		3DD5DA96260119E4009AF827 /* LXSingleCircleLinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXSingleCircleLinkedListTest.swift; sourceTree = "<group>"; };
+		3DD5DA9A2601216A009AF827 /* LXDoubleCircleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXDoubleCircleLinkedList.swift; sourceTree = "<group>"; };
+		3DD5DAA2260122EC009AF827 /* LXStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXStack.swift; sourceTree = "<group>"; };
 		3DD6DF9F237C634F009171D5 /* DataStructure_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD6DFA2237C634F009171D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		3DDD40A7237C67EA007CCEBD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		3DEBDE6B25F7CF56009C67DC /* LXLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXLinkedList.swift; sourceTree = "<group>"; };
 		3DEBDE6E25F7D81E009C67DC /* LXLXLinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXLXLinkedListTest.swift; sourceTree = "<group>"; };
 		3DEBDE7525F7E432009C67DC /* LXCheckRangeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXCheckRangeable.swift; sourceTree = "<group>"; };
@@ -59,10 +65,73 @@
 		3D6B8ECD25FE057F00C06B94 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				3D6B8ED325FE06B300C06B94 /* 206ReverseList.swift */,
 				3D6B8ED625FE1C7A00C06B94 /* LeetcodeLinkedList.swift */,
 			);
 			path = leetcode;
+			sourceTree = "<group>";
+		};
+		3DD5DA9D26012185009AF827 /* Datastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3DEBDE6B25F7CF56009C67DC /* LXLinkedList.swift */,
+				3D6B8ED925FE6E4400C06B94 /* LXDoubleLinkedList.swift */,
+				3DD5DA93260119C5009AF827 /* LXSingleCircleLinkedList.swift */,
+				3DD5DA9A2601216A009AF827 /* LXDoubleCircleLinkedList.swift */,
+			);
+			path = Datastructure;
+			sourceTree = "<group>";
+		};
+		3DD5DA9E260121C3009AF827 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3DEBDE6E25F7D81E009C67DC /* LXLXLinkedListTest.swift */,
+				3DD5DA9026011722009AF827 /* LXDoubleLinkedListTest.swift */,
+				3DD5DA96260119E4009AF827 /* LXSingleCircleLinkedListTest.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		3DD5DA9F260122C9009AF827 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		3DD5DAA0260122D9009AF827 /* Datastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5DAA2260122EC009AF827 /* LXStack.swift */,
+			);
+			path = Datastructure;
+			sourceTree = "<group>";
+		};
+		3DD5DAA1260122E2009AF827 /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = leetcode;
+			sourceTree = "<group>";
+		};
+		3DD5DAA7260125CD009AF827 /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = leetcode;
+			sourceTree = "<group>";
+		};
+		3DD5DAA8260125EE009AF827 /* Datastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datastructure;
+			sourceTree = "<group>";
+		};
+		3DD5DAA9260125F9009AF827 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		3DD6DF96237C634F009171D5 = {
@@ -106,10 +175,9 @@
 		3DDD40A4237C67AA007CCEBD /* 2.链表 */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5DA9E260121C3009AF827 /* Test */,
+				3DD5DA9D26012185009AF827 /* Datastructure */,
 				3D6B8ECD25FE057F00C06B94 /* leetcode */,
-				3DEBDE6B25F7CF56009C67DC /* LXLinkedList.swift */,
-				3DEBDE6E25F7D81E009C67DC /* LXLXLinkedListTest.swift */,
-				3D6B8ED925FE6E4400C06B94 /* LXDoubleLinkedList.swift */,
 			);
 			path = "2.链表";
 			sourceTree = "<group>";
@@ -117,6 +185,9 @@
 		3DDD40A5237C67B9007CCEBD /* 3.栈 */ = {
 			isa = PBXGroup;
 			children = (
+				3DD5DAA1260122E2009AF827 /* leetcode */,
+				3DD5DAA0260122D9009AF827 /* Datastructure */,
+				3DD5DA9F260122C9009AF827 /* Test */,
 			);
 			path = "3.栈";
 			sourceTree = "<group>";
@@ -124,7 +195,9 @@
 		3DDD40A6237C67C2007CCEBD /* 4.队列 */ = {
 			isa = PBXGroup;
 			children = (
-				3DDD40A7237C67EA007CCEBD /* Queue.swift */,
+				3DD5DAA9260125F9009AF827 /* Test */,
+				3DD5DAA8260125EE009AF827 /* Datastructure */,
+				3DD5DAA7260125CD009AF827 /* leetcode */,
 			);
 			path = "4.队列";
 			sourceTree = "<group>";
@@ -196,16 +269,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD5DAA3260122EC009AF827 /* LXStack.swift in Sources */,
+				3DD5DA97260119E4009AF827 /* LXSingleCircleLinkedListTest.swift in Sources */,
 				3D5EDE4E25F698810021B8CE /* LXDynamicArrayTest.swift in Sources */,
 				3D6B8ED725FE1C7A00C06B94 /* LeetcodeLinkedList.swift in Sources */,
 				3DD6DFA3237C634F009171D5 /* main.swift in Sources */,
 				3D6B8EDA25FE6E4400C06B94 /* LXDoubleLinkedList.swift in Sources */,
-				3DDD40A8237C67EA007CCEBD /* Queue.swift in Sources */,
+				3DD5DA94260119C5009AF827 /* LXSingleCircleLinkedList.swift in Sources */,
+				3DD5DA9B2601216A009AF827 /* LXDoubleCircleLinkedList.swift in Sources */,
 				3DEBDE6C25F7CF56009C67DC /* LXLinkedList.swift in Sources */,
 				3DEBDE7625F7E432009C67DC /* LXCheckRangeable.swift in Sources */,
+				3DD5DA9126011722009AF827 /* LXDoubleLinkedListTest.swift in Sources */,
 				3DEBDE6F25F7D81E009C67DC /* LXLXLinkedListTest.swift in Sources */,
 				3D5EDE4C25F68A510021B8CE /* LXDynamicArray.swift in Sources */,
-				3D6B8ED425FE06B300C06B94 /* 206ReverseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
